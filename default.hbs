@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     {{#if pagination.next}}<link href="{{pageUrl pagination.next}}" rel="prefetch" />{{/if}}
 
@@ -23,6 +24,14 @@
     <header id="site-head">
         {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><div class="bloglogo" style="background: url({{@blog.logo}})"></div></a>{{/if}}
         <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+        <div align="center">
+          <a href="https://twitter.com/AlcoholCinema" target="_blank"><i class="fa fa-twitter fa-border fa-3x"></i></a>
+          <a href="https://www.facebook.com/AlcoholCinema/" target="_blank"><i class="fa fa-facebook fa-border fa-3x"></i></a>
+          <a href="http://feeds.feedburner.com/Alcoholcinema" target="_blank"><i class="fa fa-rss fa-border fa-3x"></i></a>
+          <a href="https://itunes.apple.com/us/podcast/alcoholcinema/id757965946" target="_blank"><i class="fa fa-apple fa-border fa-3x"></i></a>
+          <a href="http://www.stitcher.com/s?fid=45052&refid=stpr" target="_blank"><i class="fa fa-music fa-border fa-3x"></i></a>
+          <a href="mailto:AlcoholCinema@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-border fa-3x"></i></a>
+        </div>
         {{> header-description}}
         {{!> menu}}
     </header>
